@@ -19,7 +19,7 @@ LABEL io.ntec.email2pdf.build-date=$BUILD_DATE \
       io.ntec.email2pdf.schema-version="1.0"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    python3.8 \
+    python3 \
     wkhtmltopdf \
     wget \
     python3-pip
