@@ -1,4 +1,4 @@
-cFROM ubuntu
+FROM ubuntu
 
 MAINTAINER Nicolas Goldack <nicolas-goldack@live.de>
 
