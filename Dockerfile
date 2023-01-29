@@ -1,4 +1,4 @@
-FROM ubuntu
+cFROM ubuntu
 
 MAINTAINER Nicolas Goldack <nicolas-goldack@live.de>
 
@@ -24,9 +24,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     python3-pip
 
-RUN wget "https://chilkatdownload.com/9.5.0.93/chilkat-9.5.0-python-3.8-x86_64-linux.tar.gz" --no-check-certificate
-    
-RUN cd chilkat-9.5.0-python-3.8-x86_64-linux && python3 installChilkat.py
+RUN wget "https://chilkatdownload.com/9.5.0.93/chilkat-9.5.0-python-3.9-x86_64-linux.tar.gz" --no-check-certificate
+RUN tar -zxvf "chilkat-9.5.0-python-3.9-x86_64-linux.tar.gz"   
+RUN cd chilkat-9.5.0-python-3.9-x86_64-linux && python3 installChilkat.py
 
 ADD . .
 
