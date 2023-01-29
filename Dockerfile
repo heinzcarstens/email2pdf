@@ -22,7 +22,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 \
     wkhtmltopdf \
     wget \
-    python3-pip
+    python3-pip \
+    ps2pdf
 
 RUN wget "https://chilkatdownload.com/9.5.0.93/chilkat-9.5.0-python-3.9-x86_64-linux.tar.gz" --no-check-certificate
 RUN tar -zxvf "chilkat-9.5.0-python-3.9-x86_64-linux.tar.gz"   
