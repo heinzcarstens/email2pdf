@@ -65,9 +65,6 @@ while True:
                 else:
                     pdftext = HEADER + mail.text
 
-                print("++++++++++++++++++++++++++")
-                print(TMP_DIR + mailsubject)
-                print("++++++++++++++++++++++++++")
                 pdfkit.from_string(pdftext, TMP_DIR + mailsubject + "/" + mailsubject + ".pdf", options=options)
 
                 merger = PdfWriter()
